@@ -1,0 +1,10 @@
+.bundle/
+/coverage/
+
+*.gem
+*.log
+*.lock
+
+**/db/test.sqlite*
+/test/dummy/storage/
+/test/dummy/tmp/
