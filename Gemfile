@@ -2,8 +2,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "rails"
-# gem "act_with_bag"
-gem "act_with_bag", path: "/home/dk/github/act_with_bag"
+gem "act_with_bag"
 
 group :test do
   gem "minitest-spec-rails"
