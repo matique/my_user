@@ -1,5 +1,5 @@
 # MyUser
-Short description and motivation.
+DRY User.
 
 ## Usage
 How to use my plugin.
