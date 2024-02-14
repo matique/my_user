@@ -36,7 +36,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 As usual:
 ```ruby
 # Gemfile
-gem "miau"
+gem "my_user"
 ```
 and run "bundle install".
 
