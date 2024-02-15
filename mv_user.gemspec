@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "lib/my_user/version"
 
 Gem::Specification.new do |s|
@@ -16,7 +18,9 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/matique/my_user"
 
   s.files = `git ls-files`.split("\n")
-  s.require_paths = ["lib"]
+#  s.files = ["lib/my_user.rb", "test/models/user_test.rb"]
+#  s.files = ["lib", "test/models/user_test.rb"]
+#  s.files = Dir["lib/**/*"]
 
   s.add_development_dependency "combustion"
   s.add_development_dependency "minitest"
