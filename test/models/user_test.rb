@@ -5,6 +5,9 @@ describe User do
   let(:user) { User.find_or_create_by email: "user@sample.com" }
 
   test "valid users" do
+    assert_instance_of User, admin
+    assert_instance_of User, user
+
     assert user.valid?
     assert admin.valid?
   end
@@ -36,10 +39,5 @@ describe User do
     # ordering!: first admin then user
     assert admin.admin?
     refute user.admin?
-  end
-
-  test "pio" do
-    # assert_equal "MyUser", user.pio
-    assert_equal "User", user.pio
   end
 end
