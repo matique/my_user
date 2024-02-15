@@ -1,2 +1,3 @@
-class User < MyUser
+class User < ApplicationRecord
+  include MyUser
 end

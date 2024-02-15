@@ -20,9 +20,14 @@ describe User do
 
   test "attributes" do
     assert user.respond_to?(:email)
-    assert user.respond_to?(:name)
-    assert user.respond_to?(:timezone_offset)
+    assert user.respond_to?(:locale)
     assert user.respond_to?(:logged_out_at)
+    assert user.respond_to?(:login_failed)
+    assert user.respond_to?(:login_failed_cnt)
+    assert user.respond_to?(:timezone_offset)
+  end
+
+  test "validates some attributes" do
     assert user.name.is_a?(String)
     assert user.timezone_offset.is_a?(Integer)
     assert_equal "user", user.name
