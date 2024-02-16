@@ -16,12 +16,12 @@ module MyUser
     add_to_bag timezone_offset: :integer # units seconds
 
     before_create do |row|
-      row.name ||= row.email.split("@").first || "---"
+      row.name ||= row.email&.split("@").first || "---"
       row.timezone_offset ||= Time.now.getlocal.utc_offset
     end
-  end
 
-  def admin?
-    id == 1
+    def admin?
+      id == 1
+    end
   end
 end
